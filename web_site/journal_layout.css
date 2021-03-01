@@ -1,3 +1,7 @@
+*:hover {
+    outline: 6px solid yellow;
+}
+
 body {
     /*  Exercise 2: Spacing With Padding and Margins, Backgrounds */
     background-image: url("https://static-cse.canva.com/blob/125311/texture.8b5b7bad.jpg");
@@ -28,6 +32,9 @@ body {
 
     /* Exercise 4: Cosmetic Finishing Touches */
     background-color: #A8F0F0;
+
+    /* Exercise 6 (advanced): Add 2nd Column: Friends List */
+    flex: 1;
 }
 
 .heading > h2 {
@@ -38,13 +45,45 @@ body {
     font-size: 14px;
 }
 
-.block {
+.body {
+    /* Exercise 6 (advanced): Add 2nd Column: Friends List */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin: 10px 0 0 0;
+}
+
+.body .sidebar {
+    /* Exercise 6 (advanced): Add 2nd Column: Friends List */
+    flex: 0.25;
+
+    border: 5px solid #019097;
+    background-color: #99E0E0;
+
+    margin-right: 10px;
+}
+.body .sidebar .sidebar__inner {
+    /* Exercise 6 (advanced): Add 2nd Column: Friends List */
+    padding: 20px;
+}
+
+.body .sidebar h1 {
+    color: #019097;
+}
+
+.body .content {
+    /* Exercise 6 (advanced): Add 2nd Column: Friends List */
+    flex: 0.75;
+}
+
+.body .content .block {
     /*  Exercise 1: Arrange Your Page into Sections */
     /*border: 5px solid blue;*/
 
     /*  Exercise 2: Spacing With Padding and Margins, Backgrounds */
     background-color: #E8FBFB;
-    margin: 10px 0 0 0;
     padding: 5px;
 
     /* Exercise 3: Float, Alignment and Clear*/
