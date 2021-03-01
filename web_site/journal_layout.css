@@ -49,7 +49,6 @@ body {
     /* Exercise 6 (advanced): Add 2nd Column: Friends List */
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between;
 
     margin: 10px 0 0 0;
@@ -59,14 +58,14 @@ body {
     /* Exercise 6 (advanced): Add 2nd Column: Friends List */
     flex: 0.25;
 
-    border: 5px solid #019097;
-    background-color: #99E0E0;
-
     margin-right: 10px;
 }
 .body .sidebar .sidebar__inner {
     /* Exercise 6 (advanced): Add 2nd Column: Friends List */
     padding: 20px;
+
+    border: 5px solid #019097;
+    background-color: #99E0E0;
 }
 
 .body .sidebar h1 {
